@@ -1,0 +1,48 @@
+.ui-content {
+    padding-top: 0 !important;   
+}
+.top-header {
+padding: 5px;
+  color:#fff;
+  background-color : #616161;
+ 
+}
+.page-header {
+	margin: 0px 0 21px !important;
+}
+.footer {
+	padding: 5px !important;
+  color:#fff ;
+  margin: 21px 0 21px !important;
+  background-color : #616161;
+    height: auto;
+    bottom: fixed;
+    bottom: 0;
+}
+.carousel_home {
+	background-color: #303F9F;
+  max-height: 100%;
+  margin: 0 auto !important;
+}
+
+.carousel_home img{
+  margin:auto;
+  display: inline-block;
+  width:33.33333333%;
+}
+
+.navbar_home {
+  background-color: #9E9E9E;
+}
+
+
+.some-class
+{
+    border-left:1px solid #e2e2e2;
+}
+#right{
+border-left:1px solid #e2e2e2;
+}
+#left{
+
+}
