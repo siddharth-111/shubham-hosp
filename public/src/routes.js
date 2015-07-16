@@ -15,7 +15,11 @@ app.config(function ($routeProvider, $locationProvider) {
 		controller: 'QueryController' ,
 		templateUrl: 'views/query.html'	
 	})
-	 .otherwise({
+	.when('/gallery' , {
+		controller: 'GalleryController' ,
+		templateUrl: 'views/gallery.html'	
+	})
+	.otherwise({
                 redirectTo: '/'   
             });
 });

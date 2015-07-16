@@ -46,6 +46,10 @@ angular.module('myApp')
 
   }, true);
 })
+.controller('GalleryController' , function($scope , $rootScope) {
+  $rootScope.PAGE = "gallery";
+  $scope.message = " hahahaha" ;
+})
 .controller('HomeController' , function($scope , $rootScope) {
   $rootScope.PAGE = "home";
   $scope.message = " hahahaha" ;

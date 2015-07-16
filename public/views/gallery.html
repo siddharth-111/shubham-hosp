@@ -1,0 +1,11 @@
+<div class = " row carousel_home" ng-controller="CarouselDemoCtrl" >
+
+    <carousel interval="myInterval">
+      <slide ng-repeat="slideCollection in groupedSlides" active="slide.active">
+        <div>
+          <img ng-src="{{slideCollection.image1.image}}" style="margin:auto;"><img ng-src="{{slideCollection.image2.image}}" style="margin:auto;"><img ng-src="{{slideCollection.image3.image}}" style="margin:auto;">       
+        </div>
+      </slide>
+    </carousel>  
+  </div>
+  

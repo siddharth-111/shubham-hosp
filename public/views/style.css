@@ -42,7 +42,16 @@ padding: 5px;
 }
 #right{
 border-left:1px solid #e2e2e2;
+height: 400px;
 }
 #left{
+height: 400px;
+}
 
+.btn_margin {
+  margin: 10px;
+}
+.img_width {
+  height: 200px;
+  width: 200px;
 }

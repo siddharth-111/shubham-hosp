@@ -1,39 +1,19 @@
-<!DOCTYPE html>
-<html lang="en" ng-app = "myApp" >
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-	
-</head>
-<body>
-	<div class="modal-body row">
+<div class="modal-body row">
   <div class="col-md-6" id = "left">
-    <!-- Your first column here -->
-    fsffsdsffd
+    <div class="row">
+      <img src="./img/download.jpg" alt="" class=" img_width">
+      asdadsfasfa
+    </div> 
+    <div class="row btn_margin">
+      <button class=" btn btn-primary col-sm-offset-1" align = "center"> Profile</button>
+    </div> 
   </div>
   <div class="col-md-6" id = "right">
-  safsdfddfsdfdfsfsdfds
-    <!-- Your second column here -->
+    <div class="row">
+      <img src="./img/download.jpg" alt="" class=" img_width">
+    </div>
+    <div class="row btn_margin">
+      <button class=" btn btn-primary col-sm-offset-1" align = "center"> Profile</button>
+    </div>
   </div>
 </div>
-
-  
-  <div class = " row carousel_home" ng-controller="CarouselDemoCtrl" >
-    
-      <carousel interval="myInterval">
-    <slide ng-repeat="slideCollection in groupedSlides" active="slide.active">
-      <div>
-        <img ng-src="{{slideCollection.image1.image}}" style="margin:auto;"><img ng-src="{{slideCollection.image2.image}}" style="margin:auto;"><img ng-src="{{slideCollection.image3.image}}" style="margin:auto;">       
-      </div>
-    </slide>
-  </carousel>  
-  </div>
-  
-  <script src = "./bower_components/angular/angular.min.js"></script>
-<script src = "./bower_components/angular-route/angular-route.min.js"></script>
-<script src = "./src/routes.js"></script>
-<script src = "./src/controllers.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
-</body>
-</html>
