@@ -8,5 +8,15 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siddharth-111/shubham-hosp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/siddharth-111/shubham-hosp/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.1"
+  }
 }
