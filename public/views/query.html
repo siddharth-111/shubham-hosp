@@ -1,35 +1,33 @@
 <div class="container">
   <h2>Query form</h2>
-  <form class="form-horizontal" role="form">
+  <form class="form-horizontal" role="form" name = "myFrm">
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Name:</label>
       <div class="col-sm-5">
-        <input type="email" class="form-control" id="email" placeholder="Enter name">
+        <input type="text" class="form-control"  name = "name" ng-model = "name" placeholder="Enter name" required />
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Email:</label>
+      <label class="control-label col-sm-2" >Email:</label>
       <div class="col-sm-5">          
-        <input type="email" class="form-control" id="pwd" placeholder="Enter email">
+        <input type="email" class="form-control" name = "mail" ng-model = "mail" placeholder="Enter email" required />
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="ph">Mobile:</label>
+      <label class="control-label col-sm-2" >Mobile:</label>
       <div class="col-sm-5">          
-        <input type="tel" class="form-control" id="ph" placeholder="Enter Mobile Number">
+        <input type="tel" class="form-control"  name = "mob" ng-model = "mob"  placeholder="Enter Mobile Number" required />
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="query">Your Query:</label>
+      <label class="control-label col-sm-2" >Your Query:</label>
       <div class="col-sm-5">          
-        <textarea class="form-control" id="query" placeholder="Enter Your Query"></textarea> 
+        <textarea class="form-control"  name = "Query" ng-model = "Query" placeholder="Enter Your Query" required /></textarea> 
       </div>
-    </div>
-    
     </div>
     <div class="form-group">        
       <div class="col-sm-offset-4">
-        <button type="submit" class="btn btn-default btn-primary">Submit</button>
+        <button type="submit" class="btn btn-default btn-primary" ng-click = "check()"  ng-disabled = "myFrm.name.$error.required || myFrm.mail.$error.required || myFrm.mob.$error.required || myFrm.Query.$error.required" >Submit</button>
       </div>
     </div>
   </form>

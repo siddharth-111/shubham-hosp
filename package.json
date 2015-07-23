@@ -17,6 +17,8 @@
     "url": "https://github.com/siddharth-111/shubham-hosp/issues"
   },
   "dependencies": {
-    "express": "~4.13.1"
+    "express": "~4.13.1",
+    "multer": "~1.0.1",
+    "sendgrid": "~1.9.1"
   }
 }
