@@ -20,7 +20,8 @@
     "express": "~4.13.1",
     "multer": "~1.0.1",
     "sendgrid": "~1.9.1",
-    "body-parser": "~1.13.2"
+    "body-parser": "~1.13.2",
+    "mongoose": "~4.0.8"
   },
   "devDependencies": {}
 }

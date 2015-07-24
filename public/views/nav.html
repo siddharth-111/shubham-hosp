@@ -1,17 +1,20 @@
 <link rel="stylesheet" href="style.css">
 <nav class="navbar navbar-collapse navbar-inverse navbar_home">
+ 
 	<div class="container-fluid">
 		<ul class="nav navbar-nav">
-			<li ng-class = '{active:PAGE === "home" }'><a href = "/"> Home</a></li>
-			<li ng-class = '{active:PAGE === "about" }'><a href = "/about">About Us</a></li>
-			<li ng-class = '{active:PAGE === "gallery" }'><a href = "/gallery"> Gallery</a></li>
-			<li ng-class = '{active:PAGE === "query" }' > <a href = "/query"> Query </a> </li>
+			
+			<li ng-class = '{active:PAGE === "home" }' ><a href = "/"> Home</a></li>
+			<li ng-class = '{active:PAGE === "about" }' class = 'reveal-animation' ><a href = "/about">About Us</a></li>
+			<li ng-class = '{active:PAGE === "gallery" }' class = 'reveal-animation'><a href = "/gallery"> Gallery</a></li>
+			<li ng-class = '{active:PAGE === "query" }' class = 'reveal-animation' > <a href = "/query"> Query </a> </li>
 
-			<li ><a> Facility</a></li>
+			<li class = 'reveal-animation' ><a> Facility</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			
-			<li> <a>Contact Us </a> </li>
+			<li class = 'reveal-animation'> <a>Contact Us </a> </li>
 		</ul>
 	</div>
+	
 </nav>

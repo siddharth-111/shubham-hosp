@@ -11,18 +11,16 @@
 <body  layout = "column" layout-align = "top center">
 <div class = "container">
 <div class = "page-header top-header">
- <h1> Shubham Hospitals </h1>
+ <h1 ng-mouseover="myCssVar='css-class'" ng-class="myCssVar" ng-mouseleave="myCssVar = ''"> Shubham Hospitals </h1>
 </div>
 <div class="row">
       <div class="col-sm-12" ng-include="'views/nav.html'">
       </div>
 </div>
-
-<div class="row">
-      <div class="col-sm-12" ng-view>
+      <div class = "row">
+      
+      <div class=" col-sm-12 slide" ng-view></div>
       </div>
-    </div>
-  
 
     <div class = " footer ">
     SADSADDA
@@ -31,6 +29,7 @@
 <script src = "bower_components/angular/angular.min.js"></script>
 <script src = "bower_components/angular-route/angular-route.min.js"></script>
 <script src = "bower_components/angular-resource/angular-resource.min.js"></script>
+<script src = "bower_components/angular-animate/angular-animate.js"></script>
 <script src = "src/routes.js"></script>
 <script src = "src/controllers.js"></script>
 <script src = "src/factories.js"></script>

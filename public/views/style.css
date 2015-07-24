@@ -61,3 +61,80 @@ height: 400px;
   height: 200px;
   width: 200px;
 }
+
+.reveal-animation {
+    transition: all 1s;
+}
+
+.reveal-animation.ng-enter {
+opacity:1;
+}
+
+.reveal-animation.ng-enter.ng-enter-active {
+opacity:0;
+}
+.reveal-animation.ng-leave {
+opacity:0;
+
+}
+.reveal-animation.ng-leave.ng-leave-active {
+opacity:1;
+}
+
+.reveal-animation:hover {
+  opacity: 0.5;
+}
+.css-class-add, .css-class-remove , .css-class:hover {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.css-class,
+.css-class-add.css-class-add-active {
+  font-size:3em;
+}
+
+.css-class1-add, .css-class1-remove , .css-class1:hover {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.css-class1,
+.css-class1-add.css-class1-add-active {
+  font-size:2em;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slide.ng-enter,
+.slide.ng-leave {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.slide.ng-enter {
+    left: 100%;
+}
+.slide.ng-enter-active {
+    left: 0;
+}
+.slide.ng-leave {
+    display:none;
+    left: 0;
+}
+.slide.ng-leave-active {
+    left: -100%;
+}
+.ng-trans.ng-animate {
+  position: absolute;
+}
+
+.ng-trans.ng-animate ~ .ng-trans.ng-animate {
+  position: relative;
+}
